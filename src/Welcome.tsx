@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 function Welcome() {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen flex items-center justify-center md:items-center md:justify-center bg-gray-100">
       <div className="w-full max-w-sm p-6 md:p-10 flex flex-col justify-end md:justify-center min-h-screen md:min-h-0">
@@ -10,10 +13,16 @@ function Welcome() {
         </div>
 
         <div className="flex flex-col space-y-3">
-          <button className="bg-purple-800 text-white py-2 rounded-md font-medium">
+          <button
+            className="bg-purple-800 text-white py-2 rounded-md font-medium"
+            onClick={() => navigate("/create")}
+          >
             Create Account
           </button>
-          <button className="bg-purple-200 text-gray-700 py-2 rounded-md font-semibold">
+          <button
+            className="bg-purple-200 text-gray-700 py-2 rounded-md font-semibold"
+            onClick={() => navigate("/login")}
+          >
             Already Registered? Login
           </button>
         </div>
