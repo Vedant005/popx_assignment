@@ -48,7 +48,7 @@ function Signin() {
           <button
             type="submit"
             className="w-full bg-gray-300 text-white font-semibold py-2 rounded-md cursor-not-allowed"
-            onClick={() => navigate("/settings")}
+            onClick={() => navigate("/account")}
           >
             Login
           </button>

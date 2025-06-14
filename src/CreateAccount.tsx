@@ -64,7 +64,7 @@ function CreateAccount() {
           <button
             type="submit"
             className="w-full mt-6 bg-purple-600 text-white font-semibold py-2 rounded-md"
-            onClick={() => navigate("/settings")}
+            onClick={() => navigate("/account")}
           >
             Create Account
           </button>
